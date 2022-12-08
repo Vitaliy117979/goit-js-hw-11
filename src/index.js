@@ -24,6 +24,7 @@ refs.onLoadButton.addEventListener('click', () => {
 
 function onSearch(e) {
   e.preventDefault();
+  refs.gallery.innerHTML = ""
 
   const value = searchQuery.value;
 
@@ -95,3 +96,5 @@ function createMurkupRender(arr) {
     )
     .join('');
 }
+
+
